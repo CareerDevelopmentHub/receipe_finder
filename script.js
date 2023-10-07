@@ -29,8 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
     recipes.forEach((recipe) => {
       const recipeHTML = `
                 <div class="recipe">
+                <div>
                     <h2>${recipe.recipe.label}</h2>
                     <p>By ${recipe.recipe.source}</p>
+                    </div>
                     <a href="${recipe.recipe.url}" target="_blank">View Recipe</a>
                 </div>
                 </br>
