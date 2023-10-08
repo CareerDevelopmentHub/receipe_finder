@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Finder</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Recipe Finder</h1>
-    </header>
-    <main>
-        <div class="search">
-            <input type="text" id="ingredientInput" placeholder="Enter ingredients (comma-separated)">
-            <button id="searchBtn">Search</button>
-        </div>
-        <div id="recipes" class="recipes"></div>
-        
+
+        <main id="hero-section">
+
+            <div class="hero-content">
+                <h1 class="hero-heading">Eat the best</h1>
+                <p class="hero-line">Explore and understand the culture more by tasting the amazing dishes of that
+                    culture</p>
+
+                <div class="search">
+                    <input data-cursor-text="Search Your Recipe" type="text" id="ingredientInput"
+                        placeholder="Enter ingredients (comma-separated)">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div id="recipes" class="recipes"></div>
+
+               
+            </div>
+            
+        <div class="hero-img-container">
+            <div class="backgrond-ele">
+                <div data-cursor-img="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"  >"ellipse"></div>
+                <div  data-cursor-img="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="ellipse"></div>
+                <div data-cursor-img="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="ellipse"></div>
+            </div>
+        </div> 
+            <div class="forground-elements">
+                <img src="./img/—Pngtree—chicken biryani top view_9171063.png" class="hero-img" alt="">
+                <img src="./img/pizza-pizza-filled-with-tomatoes-salami-olives.jpg" class="hero-img" alt="">
+                <img src="./img/hero-burger.png" class="hero-img" alt="">
+         </div>
+            
+                
+            
+
         </main>
-        <center>
-            <footer>
-                <p>Recipe Finder is Open for Contribution</p>
-                <p>Developer: Anshuman</p>
-                <p>API Credits : EDMAN RECIPES </p>
-            </footer>
-        </center>
+    </header>
+
+
+    <center>
+        <footer>
+            <p>Recipe Finder is Open for Contribution</p>
+            <p>Developer: Anshuman</p>
+            <p>API Credits : EDMAN RECIPES </p>
+        </footer>
+    </center>
+
+    <script>
+        const cursor = new MouseFollower({
+    container: document.body,
+    speed: 0.3
+});
+         </script>
+         
     <script src="script.js"></script>
 </body>
+
 </html>
