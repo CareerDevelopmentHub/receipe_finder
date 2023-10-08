@@ -1,65 +1,86 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
+* {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.search {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+} 
+  #hero-section{
+    min-height: 100vh;
+    padding: 0 10vw;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    background-color: rgb(201, 229, 240);
 }
 
-#ingredientInput {
+.hero-content{
+    width: 40%;
+}
+
+.hero-heading{
+    font-size: 6rem;
+    line-height: 5rem;
+    font-weight: 700;
+    
+    color: #419197;
+}
+
+.hero-line{
+    line-height: 2rem;
+    opacity: 0.75;
+    margin-top: 2rem;
+}
+
+.search.location{
     width: 100%;
-    padding: 10px;
+    height: 3.5rem;
+    border-radius: .2rem;
+    margin: 2.5rem 0;
+}
+
+.locate-btn{
+    font-size: 1.2rem;
+    width: 4rem;
+    transition: .5s;
+}
+
+.search.location .search-box{
+    padding: 1rem 1.5rem;
+}
+
+.hero-action-btn-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 15px;
+}
+
+.btn{
+    padding: 1rem 1.5rem;
+    border: 20px;
+    border-radius: .3rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-#searchBtn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    color:  blueviolet;
+    background: white;
+    text-transform: capitalize;
     cursor: pointer;
-    margin: 0.5rem;
 }
 
-#searchBtn:hover {
-    background-color: #555;
+
+
+
+
+.hero-img-container{
+    min-width: 30rem;
+    min-height: 30rem;
+    position: relative;
+    transform: scale(0.9) translateY(1rem);
 }
 
+.background-ele{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
 .recipes {
     margin-top: 20px;
     margin-bottom: 3rem;
@@ -68,7 +89,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-
+  margin-top: 20%;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -95,4 +116,68 @@ footer p {
     text-align: center;
     border-radius: 10px;
 }
-/* Add more specific styles as needed for your specific design */
+.hero-img{
+    position: absolute;
+    width: 15rem;
+    border-radius: 100%;
+    box-shadow:  0 1rem 1rem var(--shadow);
+    
+}
+.hero-img:nth-child(1){
+    right: 15%;
+    top: 20%;
+   
+}
+.hero-img:nth-child(2)
+{
+    right: 25%;
+    top: 60%;   
+    border-radius: 200px;
+   
+}
+.hero-img:nth-child(3)
+{
+    right:35%;
+    top: 10%;  
+    width: 20rem; 
+}
+.hero-img-container{
+    min-width: 30rem;
+    min-height: 30rem;
+    position: relative;
+    transform: scale(0.9) translateY(1rem);
+}
+
+.background-ele{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+.ellipse{
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    border: .01rem solid #419197;
+    transform-origin: center;
+}
+
+.ellipse:nth-child(1){
+    width: 80%;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.ellipse:nth-child(2){
+    width: 90%;
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.ellipse:nth-child(3){
+    width: 90%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+
+
