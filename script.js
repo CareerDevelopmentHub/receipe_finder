@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   searchBtn.addEventListener("click", () => {
     const ingredients = ingredientInput.value.trim();
 
-    const appId = "6a9b7ee2"; // Edamam API ID
+    const appId = "your_api_id"; // Edamam API ID
     
-    const appKey = "47df29df4a37fa5b714a292223573709"; // Edamam API Key
+    const appKey = "your_api_key"; // Edamam API Key
     const apiUrl = `https://api.edamam.com/search?q=${ingredients}&app_id=${appId}&app_key=${appKey}`;
 
     fetch(apiUrl)
