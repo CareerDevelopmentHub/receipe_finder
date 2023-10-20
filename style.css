@@ -7,9 +7,9 @@
     min-height: 100vh;
     padding: 0 10vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(201, 229, 240);
+    background-color: rgb(49, 112, 155);
 }
 
 .hero-content{
