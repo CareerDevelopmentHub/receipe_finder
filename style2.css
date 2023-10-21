@@ -39,6 +39,11 @@ a{
     justify-content: center;
     
 }
+.search :hover{
+    transition: all,0.3s,ease-out,0.5s;
+    height:40px;
+    width: 350px;
+}
 #ingredientInput{
     padding: 10px;
     width: 300px;
