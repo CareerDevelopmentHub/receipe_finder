@@ -11,65 +11,78 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    
-    /* align-items: center; */
 }
 .nav ul{
     display: flex;
-
 }
 .nav ul li{
     list-style-type: none;
-    margin: 5px;
-    font-size: 20px;
+    margin: 25px;
+    font-size: 25px;
     font-weight: 500;
+}
+#add_recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color:transparent ;
+    border: 0.2px solid black;
+    border-radius: 50%;
+    margin-left: 5px;
 }
 .nav ul li a{
     text-decoration: none;
     color: black;
     border-radius: 4px;
     padding: 5px;
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 .nav ul li a:hover{
-    background-color: #1572a1; 
+    background-color: rgba(255, 228, 196, 0.545); 
 }
 .banner img {
     width:100%;
     height: 100vh;
     object-fit: cover; 
+    background-color: aqua;
 }
 .find{
     position: absolute;
-    top: 20%;
+    top: 200px;
     left:150px;
     width: 400px;
     font-size: 30px;
-    
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.384);
 }
 .find h1{
+    margin: 10px;
+    font-size: 60px;
     color:whitesmoke;
-
-}.find p{
-    font-size: 22px;
+}
+.find p{
+    font-size: 28px;
+    font-style: italic;
     color:rgb(247, 247, 247);
 
 }
-.btn{
-    
-    padding: 4px;
-    padding-left:10px;
-    padding-right:10px;
-    font-size: 18px;
-    border-radius: 4px;
-    border: none;
-    cursor:pointer;
-    margin-left:-6px;
-}
-.btn:hover{
-    background-color: rgb(60, 60, 121);
-    color: antiquewhite;
 
+#btn{
+    font-size: 20px;
+    border-radius: 4px;
+    border: transparent;
+    cursor:pointer;
+    color: rgba(0, 0, 0, 0.478);
+    background-color: rgba(250, 235, 215, 0.484);
+}
+#inp_recipe{
+    border: none;
+}
+#btn:hover{
+    background-color: rgba(60, 60, 121,0.5);
+    color: antiquewhite;
 }input{
     padding: 4px;
     font-size: 18px;

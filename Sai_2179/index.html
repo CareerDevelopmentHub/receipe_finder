@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe_finder</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="page1" style="height: 106vh; width: auto;">
+            <div class="nav">
+                <ul>
+                    <li><a href="#home"id="add_recipe">Home</a></li>
+                    <li><a href="#service"id="add_recipe">Services</a></li>
+                    <li><a href="#menu"id="add_recipe">Menu</a></li>
+                    <li><a href="#blog" id="add_recipe">Blog</a></li>
+                    <li><a href="#Your recipes" id="add_recipe">Your recipes<button type="button" style="height: 30px; width: 30px;"><i class="fa-solid fa-plus"></i></button></a></li>
+                </ul>
+            </div>
+
+        <div class="find">
+            <h1>Find your magic</h1>
+            <p>Welcome to our Recipe Finder website, your ultimate culinary destination for discovering delectable 
+                dishes from around the world. Whether you're a seasoned chef or a novice in the kitchen, we've got a wide 
+                array of recipes to suit your taste and skill level. Get ready to embark on a flavorful journey as you explore our collection of mouthwatering recipes, 
+                cooking tips, and more. Let's start cooking up some delicious memories!</p>
+            <form id="form">
+                <input type="search" placeholder="Find recipes" id="inp_recipe">
+                <button type="button" id="btn">Search</button>
+            </form>
+
+        </div>
+        <div id="must_try">
+            <h5>Don't know what to try, Let us help you</h5>
+            <h1>Must try Foods:</h1>
+        
+            <ol id="items">
+                <li>
+                    <input id="one" type="checkbox">
+                    <label for="one">Starter</label>
+                    <ul class="s1">
+                        <li> Special Pizza</li>
+                        <li>Crimson Muffins</li>
+                        <li>Double Burger</li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="two" type="checkbox" >
+                    <label for="two">Main Course</label>
+                    <ul class="s2">
+                        <li>Paneer Dopiyaza</li>
+                        <li>Garlic Chicken</li>
+                        <li>Mutton Kadhai</li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="three" type="checkbox">
+                    <label for="three">Desert</label>
+                    <ul class="s3">
+                        <li>Mocha Ice Cream</li>
+                        <li>Mocktails</li>
+                        <li>Sweets</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="page2" style="height: 100vh; width: auto;">
+        <h2 style="text-align: center; font-size: 55px; text-decoration: underline; ">Must Try Foods</h2>
+        <div class="item_box">
+            <div class="starter box">
+                <h2 style="text-align: center; font-size: 50px;">Starter</h2>
+                <img src="img/pizza-3010062_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+                <img src="img/burger-4145977_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;"> 
+                <img src="img/cupcake-2749204_640.jpg" alt="" style="height: 295px; width: 400px ;position: relative; left: 150px;">
+                
+            </div>
+
+            <div class="main box">
+                <h2 style="text-align: center; font-size: 50px;">Main course</h2>
+                <img src="img/food-6224605_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+                <img src="img/spinach-2722801_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;"><br>
+                <img src="img/Mutton.Kadai-620.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+            </div>
+
+            <div class="desert box">
+                <h2 style="text-align: center; font-size: 50px;">Desert</h2>
+                <img src="img/ice-cream-3611698_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+                <img src="img/juice-2561339_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+                <img src="img/diwali-sweets-2832678_640.jpg" alt="" style="height: 300px; width: 400px ;position: relative; left: 150px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
