@@ -207,3 +207,37 @@ button{
     font-size: 14px;
 }
 
+
+.must-try{
+    background-color: rgb(201, 229, 240);
+}
+.must-try-title{
+    text-align: center;
+    font-size: 80px;
+    color: #d3a716 ;
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 40px 80px;
+}
+
+.box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #419197;
+    border-radius: 10px;
+    background-color: rgb(206, 229, 238);
+}
+.cnt-title{
+    text-align: center;
+    color: #419197;
+    padding: 10px;
+}
+.box a{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
