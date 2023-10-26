@@ -230,6 +230,10 @@ button{
     border: 1px solid #419197;
     border-radius: 10px;
     background-color: rgb(206, 229, 238);
+    transition: 0.5s;
+}
+.box:hover{
+    background-color: rgb(237, 221, 179);
 }
 .cnt-title{
     text-align: center;
