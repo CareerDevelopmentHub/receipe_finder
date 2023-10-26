@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page1{
+    background-image: url("img/chesnut_muffin-wallpaper-1920x1080.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.358);
+    border-radius: 20px;
+    border: 3px solid rgb(245, 149, 24);
+    top: 5px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style-type: none;
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 500;
+}
+#add_recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color:transparent ;
+    border: 0.2px solid black;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s all ease-in-out;
+}
+.nav ul li a:hover{
+    background-color: rgba(255, 228, 196, 0.645) ; 
+    cursor: pointer;
+}
+
+.find{
+    position: absolute;
+    top: 200px;
+    left:120px;
+    width: 400px;
+    font-size: 30px;
+    padding: 20px;
+    border: 3px solid rgb(245, 149, 24);
+    border-radius: 30px;
+    background-color: rgba(252, 217, 170, 0.427);
+}
+.find h1{
+    margin: 10px;
+    font-size: 60px;
+    color:whitesmoke;
+}
+.find p{
+    font-size: 28px;
+    font-style: italic;
+    color:rgb(247, 247, 247);
+}
+#btn{ 
+    font-size: 20px;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: transparent;
+    cursor:pointer;
+    margin-left:-6px;
+}
+#btn:hover{
+    background-color: rgba(60, 60, 121,0.3);
+}
+input{
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+}
+#must_try{
+    position: absolute;
+    top: 200px;
+    right:120px;
+    width: 440px;
+    font-size: 30px;
+    padding: 40px;
+    border: 3px solid rgb(245, 149, 24);
+    border-radius: 30px;
+    background-color: rgba(252, 217, 170, 0.327);
+    color:black(247, 247, 247) ;
+    animation:blink 3s ease-in-out infinite;
+}
+@keyframes blink {
+    0%   { background-color:rgba(252, 217, 170, 0.5);     border: 3px solid rgba(245, 149, 24,0.5); }
+    50%  { background-color:rgba(252, 217, 170, 0.1);     border: 3px solid rgba(245, 149, 24,1); }
+    100% { background-color:rgba(252, 217, 170, 0.5);     border: 3px solid rgba(245, 149, 24,0.5); }
+}
+/* #must_try h5,h1{
+    margin: 0px;
+} */
+#items{
+    margin: 5px;
+}
+#items>li{
+    margin: 10px;
+}
+#one, .s1{
+    display: none;
+  }
+#one:checked~ul.s1{
+    display: block;
+}
+
+#two, .s2{
+    display: none;
+  }
+#two:checked~ul.s2{
+    display: block;
+}
+
+#three, .s3{
+    display: none;
+  }
+#three:checked~ul.s3{
+    display: block;
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+  }
+
+
+.page2{
+    background-color: rgba(205, 168, 119,0.80);
+}
+.item_box{
+    display: flex;
+}
+.starter>img{
+    padding: 20px;
+}
+.main>img{
+    padding: 20px;
+}
+.desert>img{
+    padding: 20px;
+}
+.box{
+    height: 94vh;
+    width: 2000px;
+    margin: 5px;
+    border: 1px solid black;
+}
