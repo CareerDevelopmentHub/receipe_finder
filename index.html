@@ -31,7 +31,18 @@
         </div>
     </div>
     <header>
-
+        <label for="switch" style="float: right; margin-top: 50px; margin-right: 20px; padding: 30px;">
+            <input type="checkbox" id="switch" class="switch">
+            <label for="switch" style="padding-top: 20px; padding-bottom: 20px;"></label>
+      </label>
+      <script>
+        const $html = document.querySelector("html");
+        const $checkbox = document.querySelector("#switch");
+        
+        $checkbox.addEventListener("change", function() {
+            $html.classList.toggle("light-mode");
+        });
+        </script>
         <main id="hero-section">
 
             <div class="hero-content">
@@ -83,13 +94,13 @@
     </div>
 
 
-    <center>
+
         <footer>
             <p>Recipe Finder is Open for Contribution</p>
             <p>Developer: Anshuman</p>
             <p>API Credits : EDMAN RECIPES </p>
         </footer>
-    </center>
+
 
     <script>
         const cursor = new MouseFollower({
