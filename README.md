@@ -1,6 +1,15 @@
 # Recipe Finder
 
-This is a simple web application that allows users to find recipes based on ingredients using the Edamam API.
+## Overview
+
+Recipe Finder is a web application that allows users to search for recipes using a variety of criteria, including ingredients, cuisine, dietary restrictions, and more. 
+
+
+## Features
+
+Search for recipes using a variety of criteria, including ingredients, cuisine, dietary restrictions, cooking time, and more.
+Save your favorite recipes to your account for easy access later.
+Rate and review recipes to share your feedback with other users.
 
 ## Usage
 
@@ -20,3 +29,14 @@ To make this recipe finder work, you'll need to obtain an API key from Edamam.
 
 3. Replace `'YOUR_APP_ID'` and `'YOUR_APP_KEY'` in the `script.js` file with your actual Edamam API credentials.
 
+## API Credits
+
+Recipe Finder uses the EDMAN RECIPES API.
+
+## Contributing
+
+Recipe Finder is an open source project. If you would like to contribute, please visit the project's GitHub repository: [https://github.com/kamallochan2004/QR-codeGenerator]
+
+## Support
+
+If you need help with Recipe Finder, please visit the project's support forum: [https://github.com/PandaAnshuman]
