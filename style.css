@@ -326,4 +326,46 @@ body {
 }
 p{
     color: aliceblue;
+
 }
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, rgba(72, 33, 24, 0.2) 0%, rgba(72, 33, 24, 0.2) 36%,rgba(107, 68, 41, 0.2) 36%, rgba(107, 68, 41, 0.2) 51%,rgba(141, 103, 58, 0.2) 51%, rgba(141, 103, 58, 0.2) 64%,rgba(176, 137, 74, 0.2) 64%, rgba(176, 137, 74, 0.2) 76%,rgba(210, 172, 91, 0.2) 76%, rgba(210, 172, 91, 0.2) 100%),linear-gradient(135deg, rgba(16, 29, 192, 0.2) 0%, rgba(16, 29, 192, 0.2) 40%,rgba(61, 43, 200, 0.2) 40%, rgba(61, 43, 200, 0.2) 41%,rgba(107, 57, 208, 0.2) 41%, rgba(107, 57, 208, 0.2) 47%,rgba(152, 70, 215, 0.2) 47%, rgba(152, 70, 215, 0.2) 88%,rgba(198, 84, 223, 0.2) 88%, rgba(198, 84, 223, 0.2) 91%,rgba(243, 98, 231, 0.2) 91%, rgba(243, 98, 231, 0.2) 100%),linear-gradient(90deg, rgb(255, 136, 53) 0%, rgb(255, 136, 53) 10%,rgb(246, 113, 64) 10%, rgb(246, 113, 64) 12%,rgb(236, 89, 75) 12%, rgb(236, 89, 75) 24%,rgb(227, 66, 87) 24%, rgb(227, 66, 87) 29%,rgb(217, 42, 98) 29%, rgb(217, 42, 98) 40%,rgb(208, 19, 109) 40%, rgb(208, 19, 109) 100%);
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #0c0c0c;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+

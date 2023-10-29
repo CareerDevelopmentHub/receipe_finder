@@ -11,14 +11,41 @@
 
     <div class="page1" style="height: 106vh; width: auto;">
             <div class="nav">
-                <ul>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <li><a href="#home"id="add_recipe">Home</a></li>
                     <li><a href="#service"id="add_recipe">Services</a></li>
                     <li><a href="#menu"id="add_recipe">Menu</a></li>
                     <li><a href="#blog" id="add_recipe">Blog</a></li>
                     <li><a href="#Your recipes" id="add_recipe">Your recipes<button type="button" style="height: 30px; width: 30px;"><i class="fa-solid fa-plus"></i></button></a></li>
-                </ul>
+                  </div>
+                  <span style="font-size:30px;cursor:pointer ;margin-top: 40px; display: flex; justify-content: flex-start; float: left; " onclick="openNav()">&#9776;  Recipe Finder</span>
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                  }
+                  </script>
+                     
             </div>
+
+                             
+            <label for="switch" style="float: right; margin-top: 20px; margin-right: 20px; padding: 30px;">
+                <input type="checkbox" id="switch" class="switch">
+                <label for="switch" style="padding-top: 20px; padding-bottom: 20px;"></label>
+          </label>
+          <script>
+            const $html = document.querySelector("html");
+            const $checkbox = document.querySelector("#switch");
+            
+            $checkbox.addEventListener("change", function() {
+                $html.classList.toggle("light-mode");
+            });
+            </script>
 
         <div class="find">
             <h1>Find your magic</h1>
@@ -32,6 +59,8 @@
             </form>
 
         </div>
+        <br>
+        <br>
         <div id="must_try">
             <h5>Don't know what to try, Let us help you</h5>
             <h1>Must try Foods:</h1>
